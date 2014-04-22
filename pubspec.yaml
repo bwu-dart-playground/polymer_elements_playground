@@ -1,0 +1,23 @@
+name: polymer_elements_playground
+version: 0.0.1
+authors:
+- Günter Zöchbauer <guenter@gzoechbauer.com>
+description: >
+  Try polymer_elements/polmyer_ui_elements
+homepage: https://github.com/zoechi/polymer_elements_playground
+documentation: #http://erikgrimes.github.io/polymer_elements/docs/index.html
+environment:
+  sdk: ">=1.0.0 <2.0.0"
+dependencies:
+  polymer: ">=0.10.0-dev.5 < 1.0.0"
+  polymer_elements:
+    path: ../polymer_elements
+  polymer_ui_elements:
+    path: ../polymer_ui_elements
+dev_dependencies:
+  unittest: any
+transformers:
+- polymer:
+    entry_points:
+    - web/polymer_tabs_issue_index.html
+    - web/polymer_tabs_issue2_index.html
